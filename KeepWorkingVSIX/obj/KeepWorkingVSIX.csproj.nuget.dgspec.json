@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\homka\\source\\repos\\KeepWorkingVSIX\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {}
+    "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {}
   },
   "projects": {
-    "C:\\Users\\homka\\source\\repos\\KeepWorkingVSIX\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {
+    "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\homka\\source\\repos\\KeepWorkingVSIX\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
+        "projectUniqueName": "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
         "projectName": "KeepWorkingVSIX",
-        "projectPath": "C:\\Users\\homka\\source\\repos\\KeepWorkingVSIX\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
+        "projectPath": "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
         "packagesPath": "C:\\Users\\homka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\homka\\source\\repos\\KeepWorkingVSIX\\KeepWorkingVSIX\\obj\\",
+        "outputPath": "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
