@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogic
+namespace TimerManagement
 {
-    class Program
+    interface ITimerManager
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
