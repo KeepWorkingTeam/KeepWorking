@@ -45,8 +45,9 @@
   <ItemGroup>
     <Compile Include="DBManager.cs" />
     <Compile Include="FileHistory.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ITimerDataStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimerData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

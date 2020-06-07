@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBManager
+namespace TimerManagement
 {
-    class Program
+    class Timer
     {
-        static void Main(string[] args)
-        {
-        }
+        private DBManager.TimerData _data;
     }
 }
