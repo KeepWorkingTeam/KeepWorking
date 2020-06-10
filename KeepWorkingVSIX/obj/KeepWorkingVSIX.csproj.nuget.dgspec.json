@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Halasas\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {}
+    "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Halasas\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {
+    "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Halasas\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
+        "projectUniqueName": "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
         "projectName": "KeepWorkingVSIX",
-        "projectPath": "C:\\Users\\Halasas\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
-        "packagesPath": "C:\\Users\\Halasas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Halasas\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\obj\\",
+        "projectPath": "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
+        "packagesPath": "C:\\Users\\Nikolay Plyusnin\\.nuget\\packages\\",
+        "outputPath": "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Halasas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nikolay Plyusnin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
