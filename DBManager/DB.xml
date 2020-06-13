@@ -1,15 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<timespans>
-  <timespan>
-    <name>File1.cs</name>
-    <today>00:20:00</today>
-    <thisweek>10:20:00</thisweek>
-    <totaltime>17:20:00</totaltime>
-  </timespan>
-  <timespan>
-    <name>File2.cs</name>
-    <today>00:20:00</today>
-    <thisweek>10:20:00</thisweek>
-    <totaltime>17:20:00</totaltime>
-  </timespan>
-</timespans>
+<timers>
+  
+</timers>
