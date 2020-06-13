@@ -14,7 +14,6 @@ namespace DBManager
         public TimeSpan TimeElapsed { get; set; }
         public String Name { get; set; }
         public DateTime CreationDate { get; set; }
-        public TimeSpan TimeElapsed { get; set; }
         public List<DateTime> StartedDateTimes { get; set; }
         public List<DateTime> StoppedDateTimes { get; set; }
     }
