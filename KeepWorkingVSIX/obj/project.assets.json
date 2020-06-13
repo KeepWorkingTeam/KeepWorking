@@ -7512,25 +7512,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\homka\\.nuget\\packages\\": {}
+    "C:\\Users\\Nikolay Plyusnin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
+      "projectUniqueName": "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
       "projectName": "KeepWorkingVSIX",
-      "projectPath": "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
-      "packagesPath": "C:\\Users\\homka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\homka\\Source\\Repos\\hatulmadan1\\KeepWorking\\KeepWorkingVSIX\\obj\\",
+      "projectPath": "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\KeepWorkingVSIX.csproj",
+      "packagesPath": "C:\\Users\\Nikolay Plyusnin\\.nuget\\packages\\",
+      "outputPath": "D:\\Source\\Repos\\KeepWorking\\KeepWorkingVSIX\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\homka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Nikolay Plyusnin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
