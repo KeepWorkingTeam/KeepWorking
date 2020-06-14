@@ -16,5 +16,12 @@ namespace DBManager
         public DateTime CreationDate { get; set; }
         public List<DateTime> StartedDateTimes { get; set; }
         public List<DateTime> StoppedDateTimes { get; set; }
+
+        public TimerData()
+        {
+            StartedDateTimes = new List<DateTime>();
+            StoppedDateTimes = new List<DateTime>();
+            Name = "";
+        }
     }
 }
