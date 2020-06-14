@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBManager
 {
-    interface ITimerDataStorage
+    public interface ITimerDataStorage
     {
         List<TimerData> GetAll();
 
