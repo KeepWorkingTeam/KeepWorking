@@ -11,6 +11,8 @@ namespace DBManager
         List<TimerData> GetAll();
 
         List<TimerData> GetByName(String name);
+
+        TimerData GetByID(int iD);
         
         TimerData CreateTimerData(string Name, DateTime creationTime);
 
