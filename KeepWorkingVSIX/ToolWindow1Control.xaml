@@ -16,20 +16,49 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <ScrollViewer Grid.Row="0" Background="#313133">
-            <StackPanel>
-                <Border Margin="5" Background="#232323" BorderBrush="DarkSeaGreen" BorderThickness="5" Padding="5"
+            <ListBox Name="TimerList" Margin="5" Background="#232323">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" Background="#232323" 
+                            BorderBrush="DarkSeaGreen" 
+                            BorderThickness="5" Padding="5"
+                            CornerRadius="15"
+                            Width="250">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Resources/play.png" Height="25"
+                                                   HorizontalAlignment="Left"  
+                                                   Width="50"
+                                                   />
+                                <TextBlock Name="TimerID" VerticalAlignment="Center"
+                                           Text="{Binding ID}"    
+                                           Foreground="Azure" 
+                                />
+                                <TextBlock Name="TimerName" VerticalAlignment="Center"
+                                                       Text="{Binding Name}"    
+                                                       Foreground="Azure" 
+                                                       />
+                                <TextBlock Name="TimerTimeElapsed"  VerticalAlignment="Center"
+                                           Text="{Binding TimeElapsed}"    
+                                           Foreground="Azure" 
+                                />
+
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <!--<Border Margin="5" Background="#232323" BorderBrush="DarkSeaGreen" BorderThickness="5" Padding="5"
                         CornerRadius="15">
                     <Button BorderBrush="#232323" Background="#232323">
-                        <StackPanel Margin="-120 0 0 0" Orientation="Horizontal">
+                        <StackPanel Margin="0 0 0 0" Orientation="Horizontal">
                             <Image Source="Resources/play.png" Height="25"
-                                   HorizontalAlignment="Left" />
+                                   HorizontalAlignment="Left"  Width="200"/>
                             <TextBlock Name="TimerButton" Margin="10 0 0 0" VerticalAlignment="Center"
                                        Text="{Binding Path=Date}" Foreground="Azure" />
                         </StackPanel>
                     </Button>
-                </Border>
+                </Border>-->
 
-            </StackPanel>
         </ScrollViewer>
         <Grid Grid.Row="1" Grid.RowSpan="2" Background="#313133">
             <Grid.ColumnDefinitions>
@@ -45,26 +74,26 @@
                     BorderBrush="Black" BorderThickness="5" CornerRadius="10">
                 <TextBlock Padding="5" VerticalAlignment="Center"
                            HorizontalAlignment="Left" Foreground="Azure">
-                    Information
+                    Useful info (no)
                 </TextBlock>
             </Border>
 
             <Border Grid.Row="1" Margin="3" Background="#232323" BorderThickness="5" Padding="5" CornerRadius="15">
-                <Button BorderBrush="#232323" Background="#232323">
+                <Button BorderBrush="#232323" Background="#232323" Click="newTimer">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Foreground="Azure">
-                            Button1
+                            Create
                         </TextBlock>
                     </StackPanel>
                 </Button>
             </Border>
 
-            <Border Grid.Row="1" Grid.Column="1" Margin="3" Background="#232323" BorderThickness="5" Padding="5"
-                    CornerRadius="15">
-                <Button BorderBrush="#232323" Background="#232323">
+            <Border Grid.Row="1" Grid.Column="1" Margin="3" Background="#232323" 
+                    BorderThickness="5" Padding="5" CornerRadius="15">
+                <Button BorderBrush="#232323" Background="#232323" Click="deleteTimer">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Foreground="Azure">
-                            Button2
+                            Delete
                         </TextBlock>
                     </StackPanel>
                 </Button>
