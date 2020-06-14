@@ -12,21 +12,12 @@ namespace TimerManagement
         private DBManager.TimerData _data;
         private bool _isStarted;
         public string Name { get => _data.Name; set => _data.Name = value; }
-
-        public Timer()
-        {
-            _data = new TimerData();
-        }
+        public DateTime CreationDate => DateCopy(_data.CreationDate);
+        public int ID => _data.ID;
 
         public Timer(TimerData data)
         {
             _data = data;
-        }
-
-        public Timer(String Name)
-        {
-            _data = new TimerData();
-            _data.Name = Name;
         }
 
         public TimeSpan TimeElapsed
@@ -40,7 +31,6 @@ namespace TimerManagement
                 return _data.TimeElapsed + (secondDate - firstDate);
             }
         }
-        public DateTime CreationDate => DateCopy(_data.CreationDate);
         public void Start()
         {
             _isStarted = true;
@@ -55,6 +45,24 @@ namespace TimerManagement
             _data.TimeElapsed += (secondTime - firsTime);
         }
 
+        public TimerData getReadyToSaveData()
+        {
+            TimerData data = new TimerData();
+            data.ID = _data.ID;
+            data.Name = String.Copy(_data.Name);
+            data.CreationDate = CreationDate;
+            data.StartedDateTimes = _data.StartedDateTimes;
+            data.StoppedDateTimes = _data.StoppedDateTimes;
+            data.TimeElapsed = _data.TimeElapsed;
+            if(_isStarted)
+            {
+                data.StartedDateTimes.Add(DateTime.Now);
+                DateTime firsTime = data.StartedDateTimes[data.StartedDateTimes.Count - 1];
+                DateTime secondTime = data.StoppedDateTimes[data.StoppedDateTimes.Count - 1];
+                data.TimeElapsed += (secondTime - firsTime);
+            }
+            return data;
+        }
         public List<DateTime> getAllStartedTimes()
         {
             List<DateTime> all = new List<DateTime>();
