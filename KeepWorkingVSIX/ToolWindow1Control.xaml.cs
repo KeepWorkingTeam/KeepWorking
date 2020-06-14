@@ -1,4 +1,7 @@
-﻿namespace KeepWorkingVSIX
+﻿using System;
+using System.Windows.Data;
+
+namespace KeepWorkingVSIX
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Windows;
@@ -12,9 +15,13 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="ToolWindow1Control"/> class.
         /// </summary>
+        public DateTime now;
         public ToolWindow1Control()
         {
             this.InitializeComponent();
+
+            now = new DateTime();
+            this.DataContext = now;
         }
 
         /// <summary>
@@ -28,7 +35,7 @@
         {
             MessageBox.Show(
                 string.Format(System.Globalization.CultureInfo.CurrentUICulture, "Invoked '{0}'", this.ToString()),
-                "ToolWindow1");
+                "KeepWorking");
         }
     }
 }
