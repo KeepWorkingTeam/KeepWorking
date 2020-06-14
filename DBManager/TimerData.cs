@@ -21,9 +21,7 @@ namespace DBManager
         {
             StartedDateTimes = new List<DateTime>();
             StoppedDateTimes = new List<DateTime>();
-            Name = "New timer";
-            CreationDate = DateTime.Now;
-            ITimerDataStorage.
+            Name = "";
         }
     }
 }
