@@ -49,6 +49,7 @@
     <Compile Include="ITimerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Timer.cs" />
+    <Compile Include="TimerManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
