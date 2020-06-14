@@ -6,15 +6,44 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.Xml.Linq;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace DBManager
 {
     public class TimerDataStorage : ITimerDataStorage
     {
         private string path = @"..\..\..\DBManager\DB.xml";
+        private string pathID = @"..\..\..\DBManager\TimerID.json";
         public TimerData CreateTimerData(string Name, DateTime creationTime)
         {
-            throw new NotImplementedException();
+            if (!File.Exists(path))
+            {
+                File.WriteAllText(path, "");
+            }
+
+            XDocument dB = new XDocument();
+
+            TimerData timerData = new TimerData
+            {
+                ID = GetFreshTimerID(),
+                Name = Name,
+                TimeElapsed = TimeSpan.Zero,
+                CreationDate = creationTime,
+                StartedDateTimes = new List<DateTime>(),
+                StoppedDateTimes = new List<DateTime>()
+            };
+
+            dB.Element("timers").Add(new XElement("time",
+                        new XElement("Name", timerData.Name),
+                        new XElement("ID", timerData.ID.ToString()),
+                        new XElement("TimeElapsed", timerData.TimeElapsed.ToString()),
+                        new XElement("CreationDate", timerData.CreationDate.ToString()),
+                        new XElement("StartedDateTimes", JsonConvert.SerializeObject(timerData.StartedDateTimes)),
+                        new XElement("StoppedDateTimes", JsonConvert.SerializeObject(timerData.StoppedDateTimes))));
+
+            dB.Save(path);
+
+            return timerData;
         }
 
         public bool DeleteTimerData(int ID)
@@ -89,7 +118,33 @@ namespace DBManager
 
         public bool SaveTimerData(TimerData timerData)
         {
-            throw new NotImplementedException();
+            XDocument dB = XDocument.Load(path);
+
+            DeleteTimerData(timerData.ID);
+            dB.Element("timers").Add(new XElement("time",
+                        new XElement("Name", timerData.Name),
+                        new XElement("ID", timerData.ID.ToString()),
+                        new XElement("TimeElapsed", timerData.TimeElapsed.ToString()),
+                        new XElement("CreationDate", timerData.CreationDate.ToString()),
+                        new XElement("StartedDateTimes", JsonConvert.SerializeObject(timerData.StartedDateTimes)),
+                        new XElement("StoppedDateTimes", JsonConvert.SerializeObject(timerData.StoppedDateTimes))));
+
+
+            return true;
+        }
+
+        private int GetFreshTimerID()
+        {
+            if (!File.Exists(pathID))
+            {
+                File.WriteAllText(pathID, "0");
+            }
+
+            int iD = int.Parse(File.ReadAllText(pathID));
+            iD++;
+
+            File.WriteAllText(pathID, iD.ToString());
+            return iD;
         }
     }
 }
