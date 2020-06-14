@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UISupplier", "UISupplier\UISupplier.csproj", "{ACDD8DC9-ED9A-42DE-B06D-8D582016934E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeepWorkingTest", "KeepWorkingTest\KeepWorkingTest.csproj", "{A69BBB83-C485-43A4-AA14-81431405767B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ACDD8DC9-ED9A-42DE-B06D-8D582016934E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACDD8DC9-ED9A-42DE-B06D-8D582016934E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACDD8DC9-ED9A-42DE-B06D-8D582016934E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69BBB83-C485-43A4-AA14-81431405767B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69BBB83-C485-43A4-AA14-81431405767B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69BBB83-C485-43A4-AA14-81431405767B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69BBB83-C485-43A4-AA14-81431405767B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
