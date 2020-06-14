@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Menu</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+<style>
+html { font-family:sans-serif; background-color:#ffffff; font-size:75%;}
+a { text-decoration:none; color:rgb(0,51,102) }
+.header a { color:#000!important }
+a:focus {background-color: #CCCCCC;}
+.item { border:solid 0px #000; padding:0.25em; margin-left:1em }
+.header, .leaf { cursor:pointer; padding-left:19px; min-height:18px; line-height:18px; white-space:nowrap;}
+.closed { background:url(bookC.gif) no-repeat }
+.open { background:url(bookE.gif) no-repeat }
+.leaf { background:url(leaf.gif) no-repeat }
+</style>
+
+<script>
+function toggle(idsub,elhead) {
+    var elsub = document.getElementById(idsub);
+    if(elsub.style.display=="block")
+        elsub.style.display = "none";
+    else
+        elsub.style.display="block";
+        
+    if(elhead.className=="header open")
+        elhead.className = "header closed";
+    else
+        elhead.className = "header open";
+}
+
+function expandLinkInToc(url) {
+	var link = findLink(url);
+	//alert(link);
+	//alert(link.innerHTML);
+	if(!isElementVisible(link)) {
+		expandElementAndParents(link);
+	}
+	link.scrollIntoView(true);
+	link.focus();
+}
+
+function expandElementAndParents(elm) {
+	if(elm.style) {
+		if(elm.style.display=="none") {
+			//elm is container with subtopics
+			elm.style.display="block";
+			// process also chapter header
+			var id = elm.getAttribute("id");
+			id = id.substring(1);
+			var elHead = document.getElementById(id);
+			if(elHead.className=="header closed") {
+				elHead.className = "header open";
+			}
+		}
+	}
+	// process parents
+	if (elm.parentNode) {
+		expandElementAndParents(elm.parentNode);
+	}
+}
+
+function findLink(url) {
+	var links = document.links;
+	var i;
+	for (i=0; i<links.length; i++) {
+		if (links[i].href == url) {
+			return links[i];
+		}		
+	}
+	return null;
+} 
+
+function isElementVisible(elm) {
+	if(elm.style) {
+		if(elm.style.display == "none") {
+			return false;
+		}
+	}
+	if (elm.parentNode) {
+		return isElementVisible(elm.parentNode);
+	} else {
+		return true;
+	}
+}
+</script>
+
+
+ <link rel="stylesheet" type="text/css" href="vsdocman_overrides.css"></link> 
+</head>
+
+<body>
+    
+						 		<div id="1" class="header closed" onclick="toggle('c1',this)">
+   
+  		<a href="topic_0000000000000006.html" target="vbdocright">KeepWorkingTest Reference</a>
+ 
+		</div>
+     <div id="c1" class="item" style="display:none">
+		
+     
+
+       <div id="2" class="header closed" onclick="toggle('c2',this)">
+    <a href="topic_0000000000000000.html" target="vbdocright">KeepWorkingTest Namespace</a>
+    </div>
+    <div id="c2" class="item" style="display:none">
+		
+
+						    <div id="3" class="header closed" onclick="toggle('c3',this)">
+    <a href="topic_0000000000000001.html" target="vbdocright">DbUnitTest1 Class</a>
+    </div>
+    <div id="c3" class="item" style="display:none">
+		
+
+		
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		    <div id="4" class="header closed" onclick="toggle('c4',this)">
+    <a href="topic_0000000000000001_methods--.html" target="vbdocright">Methods</a>
+    </div>
+    <div id="c4" class="item" style="display:none">
+		
+						  
+    <div class="leaf"><a href="topic_0000000000000003.html" target="vbdocright">AddDeleteTimer Method</a></div>
+  
+
+						
+						
+						  
+    <div class="leaf"><a href="topic_0000000000000002.html" target="vbdocright">GetAllNotNullable Method</a></div>
+  
+
+						  
+    <div class="leaf"><a href="topic_0000000000000004.html" target="vbdocright">GetChangeSaveCheck Method</a></div>
+  
+
+						
+						  
+    <div class="leaf"><a href="topic_0000000000000005.html" target="vbdocright">GetNames Method</a></div>
+  
+
+						
+						
+						
+			</div>
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+</div>
+
+
+		
+		
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+</div>
+
+
+ 
+
+  
+		</div>
+ 
+
+
+
+		
+		
+</body>
+</html>

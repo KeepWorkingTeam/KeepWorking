@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Search index</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <link href="search_style.css" type="text/css" rel="stylesheet" />
+    <script src="search.js" type="text/javascript"></script>
+</head>
+
+<body>
+<form name="searchform" onsubmit="do_search();return false;">
+<input id="q" name="q"/><button type="submit">Search</button>
+</form>
+
+<div id="some_results">Results:</div>
+<div id="no_results">No results found</div>
+<div id="content">
+<ul>
+<li id="s_0" style="display:none"><a href="title--.html" target="vbdocright">Default page</a></li>
+<li id="s_1" style="display:none"><a href="topic_0000000000000000.html" target="vbdocright">KeepWorkingTest Namespace</a></li>
+<li id="s_2" style="display:none"><a href="topic_0000000000000001.html" target="vbdocright">DbUnitTest1 Class</a></li>
+<li id="s_3" style="display:none"><a href="topic_0000000000000001_attached_props--.html" target="vbdocright">DbUnitTest1 Attached Properties</a></li>
+<li id="s_4" style="display:none"><a href="topic_0000000000000001_events--.html" target="vbdocright">DbUnitTest1 Events</a></li>
+<li id="s_5" style="display:none"><a href="topic_0000000000000001_methods--.html" target="vbdocright">DbUnitTest1 Methods</a></li>
+<li id="s_6" style="display:none"><a href="topic_0000000000000001_props--.html" target="vbdocright">DbUnitTest1 Properties</a></li>
+<li id="s_7" style="display:none"><a href="topic_0000000000000001_vars--.html" target="vbdocright">DbUnitTest1 Fields</a></li>
+<li id="s_8" style="display:none"><a href="topic_0000000000000002.html" target="vbdocright">DbUnitTest1.GetAllNotNullable Method</a></li>
+<li id="s_9" style="display:none"><a href="topic_0000000000000003.html" target="vbdocright">DbUnitTest1.AddDeleteTimer Method</a></li>
+<li id="s_10" style="display:none"><a href="topic_0000000000000004.html" target="vbdocright">DbUnitTest1.GetChangeSaveCheck Method</a></li>
+<li id="s_11" style="display:none"><a href="topic_0000000000000005.html" target="vbdocright">DbUnitTest1.GetNames Method</a></li>
+<li id="s_12" style="display:none"><a href="topic_0000000000000006.html" target="vbdocright">KeepWorkingTest Reference </a></li>
+
+</ul>
+</div>
+
+<script type="text/javascript">
+var qterms = [];
+var nurls = 13;
+var index = {"default":[0],"page":[0],"go":[0],"to":[0, 1, 2, 8, 9, 10, 11],"keepworkingtest":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"namespace":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],"syntaxhighlighter":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"all":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"try":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"if":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"location":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"search":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"toc":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"no":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"parent":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"document":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"title":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"var":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"filename":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"pathname":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"replace":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"g":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"substring":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"lastindexof":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"1":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"window":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"null":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"hash":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"replacetitleandurl":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"index":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"html":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"catch":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"ex":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"reference":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"assembly":[1, 2, 8, 9, 10, 11],"in":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"dll":[1, 2, 8, 9, 10, 11],"classes":[1],"name":[1, 2, 5, 12],"description":[1, 2, 5, 12],"dbunittest1":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],"top":[1, 2, 5, 12],"applies":[1, 2, 8, 9, 10, 11],"net":[1, 2, 8, 9, 10, 11],"frameworksupported":[1, 2, 8, 9, 10, 11],"4":[1, 2, 8, 9, 10, 11],"5":[1, 2, 8, 9, 10, 11],"2":[1, 2, 8, 9, 10, 11],"6":[1, 2, 8, 9, 10, 11],"7":[1, 2, 8, 9, 10, 11],"generated":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"with":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"unregistered":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"version":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"of":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"vsdocmanyour":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"own":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"footer":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"text":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"will":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"only":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"be":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"shown":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"registered":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],"class":[2, 3, 4, 5, 6, 7, 8, 9, 10, 11],"see":[2, 3, 4, 5, 6, 7, 8, 9, 10, 11],"also":[2, 3, 4, 5, 6, 7, 8, 9, 10, 11],"syntax":[2, 8, 9, 10, 11],"vb":[2, 8, 9, 10, 11],"c":[2, 8, 9, 10, 11],"f":[2, 8, 9, 10, 11],"jscript":[2, 8, 9, 10, 11],"copy":[2, 8, 9, 10, 11],"testclass":[2],"_public":[2, 8, 9, 10, 11],"this":[2, 8, 9, 10, 11],"language":[2, 8, 9, 10, 11],"is":[2, 8, 9, 10, 11],"not":[2, 8, 9, 10, 11],"supported":[2, 8, 9, 10, 11],"or":[2, 8, 9, 10, 11],"code":[2, 8, 9, 10, 11],"example":[2, 8, 9, 10, 11],"available":[2, 8, 9, 10, 11],"public":[2, 8, 9, 10, 11],"ref":[2],"methods":[2, 5],"adddeletetimer":[2, 5, 9],"equals":[2, 5],"object":[2, 5],"определяет":[2, 5],"равен":[2, 5],"ли":[2, 5],"заданный":[2, 5],"объект":[2, 5],"текущему":[2, 5],"объекту":[2, 5],"inherited":[2, 5],"from":[2, 5],"finalize":[2, 5],"позволяет":[2, 5],"попытаться":[2, 5],"освободить":[2, 5],"ресурсы":[2, 5],"и":[2, 5],"выполнить":[2, 5],"другие":[2, 5],"операции":[2, 5],"очистки":[2, 5],"перед":[2, 5],"тем":[2, 5],"как":[2, 5],"он":[2, 5],"будет":[2, 5],"уничтожен":[2, 5],"во":[2, 5],"время":[2, 5],"сборки":[2, 5],"мусора":[2, 5],"getallnotnullable":[2, 5, 8],"getchangesavecheck":[2, 5, 10],"gethashcode":[2, 5],"служит":[2, 5],"хэш":[2, 5],"функцией":[2, 5],"по":[2, 5],"умолчанию":[2, 5],"getnames":[2, 5, 11],"gettype":[2, 5],"возвращает":[2, 5],"type":[2, 3, 4, 5, 6, 7],"для":[2, 5],"текущего":[2, 5],"экземпляра":[2, 5],"memberwiseclone":[2, 5],"создает":[2, 5],"неполную":[2, 5],"копию":[2, 5],"объекта":[2, 5],"tostring":[2, 5],"строку":[2, 5],"представляющую":[2, 5],"текущий":[2, 5],"inheritance":[2],"hierarchy":[2],"system":[2],"attached":[3],"properties":[3, 6],"the":[3, 4, 5, 6, 7],"following":[3, 4, 5, 6, 7],"tables":[3, 4, 5, 6, 7],"list":[3, 4, 5, 6, 7],"members":[3, 4, 5, 6, 7],"exposed":[3, 4, 5, 6, 7],"by":[3, 4, 5, 6, 7],"events":[4],"fields":[7],"method":[8, 9, 10, 11],"testmethod":[8, 9, 10, 11],"sub":[8, 9, 10, 11],"void":[8, 9, 10, 11],"function":[8, 9, 10, 11],"namespaces":[12]};
+</script>
+
+</body>
+</html>

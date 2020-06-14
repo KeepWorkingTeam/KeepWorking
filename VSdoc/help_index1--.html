@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Index</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<style>
+		html,body {
+			margin: 0; padding: 0px;
+			height:100%; 
+			min-height:100%;
+			background-color: rgb(233,232,220);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: black;
+		}
+
+		body {font-size:75%;position:relative; margin-top:-1px; border-style: solid solid solid solid;	border-color: rgb(172,168,153);	border-width: 0px 0px 1px 0px;}
+		a { text-decoration:none; color:#06c }
+		form {padding:5px; margin:0px;}
+	</style>
+
+ <link rel="stylesheet" type="text/css" href="vsdocman_overrides.css"></link> 
+</head>
+<body style="direction: ltr;">
+	<form>
+	Look for:<br /><input style="width:100%" onKeyDown="check_input(this.value,get_match)" onKeyUp="check_input(this.value,get_match)"/>
+	</form>
+
+	<script>
+		var words = new Array(
+"AddDeleteTimer Method","BusinessLogic Namespace","CommandId Field","CommandSet Field","CreateTimer Method {BusinessLogic.TimerManager}","CreateTimer Method {TimerManagement.ITimerManager}","CreateTimerData Method {DBManager.ITimerDataStorage}","CreateTimerData Method {DBManager.TimerDataStorage}","CreationDate Property {DBManager.TimerData}","CreationDate Property {TimerManagement.Timer}","DBManager Class","DBManager Namespace","DateCopy Method","DbUnitTest1 Class","DeleteTimer Method {BusinessLogic.TimerManager}","DeleteTimer Method {TimerManagement.ITimerManager}","DeleteTimerData Method {DBManager.ITimerDataStorage}","DeleteTimerData Method {DBManager.TimerDataStorage}","Execute Method","FileHistory Class","FileName Property","GetAll Method {DBManager.ITimerDataStorage}","GetAll Method {DBManager.TimerDataStorage}","GetAllNotNullable Method","GetAllTimers Method {BusinessLogic.TimerManager}","GetAllTimers Method {TimerManagement.ITimerManager}","GetByID Method {DBManager.ITimerDataStorage}","GetByID Method {DBManager.TimerDataStorage}","GetByName Method {DBManager.ITimerDataStorage}","GetByName Method {DBManager.TimerDataStorage}","GetChangeSaveCheck Method","GetFileHistory Method","GetFreshTimerID Method","GetNames Method","GetTimersBetweenDates Method {BusinessLogic.TimerManager}","GetTimersBetweenDates Method {TimerManagement.ITimerManager}","GetTimersByName Method {BusinessLogic.TimerManager}","GetTimersByName Method {TimerManagement.ITimerManager}","GetTimersEarlierThan Method {BusinessLogic.TimerManager}","GetTimersEarlierThan Method {TimerManagement.ITimerManager}","GetTimersLaterThan Method {BusinessLogic.TimerManager}","GetTimersLaterThan Method {TimerManagement.ITimerManager}","ID Property {DBManager.TimerData}","ID Property {TimerManagement.Timer}","ITimerDataStorage Interface","ITimerManager Interface","InitializeAsync Method {KeepWorkingVSIX.KeepWorkingVSIXPackage}","InitializeAsync Method {KeepWorkingVSIX.ToolWindow1Command}","Instance Property","KeepWorkingTest Namespace","KeepWorkingVSIX Namespace","KeepWorkingVSIXPackage Class","Main Method","Name Property {DBManager.TimerData}","Name Property {TimerManagement.Timer}","PackageGuidString Field","Program Class","SOLUTION-WIDE PROPERTIES Reference","SaveAll Method {BusinessLogic.TimerManager}","SaveAll Method {TimerManagement.ITimerManager}","SaveTimerData Method {DBManager.ITimerDataStorage}","SaveTimerData Method {DBManager.TimerDataStorage}","ServiceProvider Property","Start Method","StartNewDay Method","StartNewWeek Method","StartedDateTimes Property","Stop Method","StopAndSaveAll Method {BusinessLogic.TimerManager}","StopAndSaveAll Method {TimerManagement.ITimerManager}","StoppedDateTimes Property","ThisWeekTime Property","TimeElapsed Property {DBManager.TimerData}","TimeElapsed Property {TimerManagement.Timer}","Timer Class","Timer Constructor","TimerData Class","TimerData Constructor","TimerDataStorage Class","TimerManagement Namespace","TimerManager Class","TimerManager Constructor","TodayTime Property","ToolWindow1 Class","ToolWindow1 Constructor","ToolWindow1Command Class","ToolWindow1Command Constructor","ToolWindow1Control Class","ToolWindow1Control Constructor","TotalTime Property","UISupplier Namespace","WriteToDB Method","_allTimers Field","_data Field","_isStarted Field","_storage Field","button1_Click Method","getAllStartedTimes Method","getAllStoppedTimes Method","getReadyToSaveData Method","package Field","path Field {DBManager.DBManager}","path Field {DBManager.TimerDataStorage}","pathID Field","timerDataStorage Field"
+		);
+		
+		
+		var oldHighlight = 0;
+		var oldKey = "";
+		
+		function get_match(text) {
+		    var ltext = text.toLowerCase();
+		    for(i in words) {
+		        if(words[i].toLowerCase().indexOf(ltext) == "0") {
+		            return words[i];
+		        }
+		    }
+		    return "";
+		}
+		
+		function highlight(keyword) {
+		    if(oldHighlight) oldHighlight.className = "";
+		    var el = parent.frames['zindex'].document.getElementById("w_"+keyword);
+		    el.className="highlighted";
+		    oldHighlight = el;
+		}
+		
+		function check_input(text, matchfun) {
+		    if(text!=oldKey) {
+		        var keyword = matchfun(text);
+		        if(keyword) {       
+		            highlight(keyword);
+		            parent.frames['zindex'].document.getElementById('w_'+keyword).scrollIntoView();
+		        }
+		        oldKey = text;
+		    }
+		}
+	</script>
+</body>
+</html>
+
