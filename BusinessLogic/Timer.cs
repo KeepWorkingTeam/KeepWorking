@@ -7,7 +7,7 @@ using DBManager;
 
 namespace TimerManagement
 {
-    class Timer
+    public class Timer
     {
         private DBManager.TimerData _data;
         private bool _isStarted;
