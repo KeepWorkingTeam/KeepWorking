@@ -11,9 +11,17 @@ namespace DBManager
     public class TimerData
     {
         public int ID { get; set; }
+        public TimeSpan TimeElapsed { get; set; }
         public String Name { get; set; }
         public DateTime CreationDate { get; set; }
         public List<DateTime> StartedDateTimes { get; set; }
         public List<DateTime> StoppedDateTimes { get; set; }
+
+        public TimerData()
+        {
+            StartedDateTimes = new List<DateTime>();
+            StoppedDateTimes = new List<DateTime>();
+            Name = "";
+        }
     }
 }

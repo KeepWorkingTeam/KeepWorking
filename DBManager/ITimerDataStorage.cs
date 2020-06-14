@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace DBManager
 {
-    interface ITimerDataStorage
+    public interface ITimerDataStorage
     {
-        List<TimerData> getAll();
+        List<TimerData> GetAll();
 
-        List<TimerData> getByName(String name);
+        List<TimerData> GetByName(String name);
         
         TimerData CreateTimerData(string Name, DateTime creationTime);
 
         bool DeleteTimerData(int ID);
+
+        bool SaveTimerData(TimerData timerData);
     }
 }
