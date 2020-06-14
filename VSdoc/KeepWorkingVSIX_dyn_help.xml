@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="KeepWorkingVSIX" Title="SOLUTION-WIDE PROPERTIES Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.AddDeleteTimer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000065.html" LinkGroup="KeepWorkingVSIX">AddDeleteTimer Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000050.html" LinkGroup="KeepWorkingVSIX">BusinessLogic Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.CommandId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000007.html" LinkGroup="KeepWorkingVSIX">CommandId Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.CommandSet" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000008.html" LinkGroup="KeepWorkingVSIX">CommandSet Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.CreateTimer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000055.html" LinkGroup="KeepWorkingVSIX">CreateTimer Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.CreateTimer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000039.html" LinkGroup="KeepWorkingVSIX">CreateTimer Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage.CreateTimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000022.html" LinkGroup="KeepWorkingVSIX">CreateTimerData Method {DBManager.ITimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.CreateTimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000030.html" LinkGroup="KeepWorkingVSIX">CreateTimerData Method {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.CreationDate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000029.html" LinkGroup="KeepWorkingVSIX">CreationDate Property {DBManager.TimerData}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.CreationDate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000046.html" LinkGroup="KeepWorkingVSIX">CreationDate Property {TimerManagement.Timer}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.DBManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000013.html" LinkGroup="KeepWorkingVSIX">DBManager Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000012.html" LinkGroup="KeepWorkingVSIX">DBManager Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.DateCopy" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000004F.html" LinkGroup="KeepWorkingVSIX">DateCopy Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000062.html" LinkGroup="KeepWorkingVSIX">DbUnitTest1 Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.DeleteTimer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000056.html" LinkGroup="KeepWorkingVSIX">DeleteTimer Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.DeleteTimer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000003A.html" LinkGroup="KeepWorkingVSIX">DeleteTimer Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage.DeleteTimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000023.html" LinkGroup="KeepWorkingVSIX">DeleteTimerData Method {DBManager.ITimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.DeleteTimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000031.html" LinkGroup="KeepWorkingVSIX">DeleteTimerData Method {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000000E.html" LinkGroup="KeepWorkingVSIX">Execute Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.FileHistory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000019.html" LinkGroup="KeepWorkingVSIX">FileHistory Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.FileHistory.FileName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000001A.html" LinkGroup="KeepWorkingVSIX">FileName Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage.GetAll" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000001F.html" LinkGroup="KeepWorkingVSIX">GetAll Method {DBManager.ITimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.GetAll" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000032.html" LinkGroup="KeepWorkingVSIX">GetAll Method {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.GetAllNotNullable" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000064.html" LinkGroup="KeepWorkingVSIX">GetAllNotNullable Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.GetAllTimers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000057.html" LinkGroup="KeepWorkingVSIX">GetAllTimers Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.GetAllTimers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000003B.html" LinkGroup="KeepWorkingVSIX">GetAllTimers Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage.GetByID" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000021.html" LinkGroup="KeepWorkingVSIX">GetByID Method {DBManager.ITimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.GetByID" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000034.html" LinkGroup="KeepWorkingVSIX">GetByID Method {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage.GetByName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000020.html" LinkGroup="KeepWorkingVSIX">GetByName Method {DBManager.ITimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.GetByName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000033.html" LinkGroup="KeepWorkingVSIX">GetByName Method {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.GetChangeSaveCheck" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000066.html" LinkGroup="KeepWorkingVSIX">GetChangeSaveCheck Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.DBManager.GetFileHistory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000016.html" LinkGroup="KeepWorkingVSIX">GetFileHistory Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.GetFreshTimerID" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000036.html" LinkGroup="KeepWorkingVSIX">GetFreshTimerID Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.GetNames" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000067.html" LinkGroup="KeepWorkingVSIX">GetNames Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.GetTimersBetweenDates" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000059.html" LinkGroup="KeepWorkingVSIX">GetTimersBetweenDates Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.GetTimersBetweenDates" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000003D.html" LinkGroup="KeepWorkingVSIX">GetTimersBetweenDates Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.GetTimersByName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000058.html" LinkGroup="KeepWorkingVSIX">GetTimersByName Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.GetTimersByName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000003C.html" LinkGroup="KeepWorkingVSIX">GetTimersByName Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.GetTimersEarlierThan" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000005B.html" LinkGroup="KeepWorkingVSIX">GetTimersEarlierThan Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.GetTimersEarlierThan" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000003F.html" LinkGroup="KeepWorkingVSIX">GetTimersEarlierThan Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.GetTimersLaterThan" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000005A.html" LinkGroup="KeepWorkingVSIX">GetTimersLaterThan Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.GetTimersLaterThan" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000003E.html" LinkGroup="KeepWorkingVSIX">GetTimersLaterThan Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.ID" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000026.html" LinkGroup="KeepWorkingVSIX">ID Property {DBManager.TimerData}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.ID" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000047.html" LinkGroup="KeepWorkingVSIX">ID Property {TimerManagement.Timer}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000001E.html" LinkGroup="KeepWorkingVSIX">ITimerDataStorage Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000038.html" LinkGroup="KeepWorkingVSIX">ITimerManager Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.KeepWorkingVSIXPackage.InitializeAsync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000003.html" LinkGroup="KeepWorkingVSIX">InitializeAsync Method {KeepWorkingVSIX.KeepWorkingVSIXPackage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.InitializeAsync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000000D.html" LinkGroup="KeepWorkingVSIX">InitializeAsync Method {KeepWorkingVSIX.ToolWindow1Command}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.Instance" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000000B.html" LinkGroup="KeepWorkingVSIX">Instance Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000061.html" LinkGroup="KeepWorkingVSIX">KeepWorkingTest Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000000.html" LinkGroup="KeepWorkingVSIX">KeepWorkingVSIX Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.KeepWorkingVSIXPackage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000001.html" LinkGroup="KeepWorkingVSIX">KeepWorkingVSIXPackage Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="UISupplier.Program.Main" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000060.html" LinkGroup="KeepWorkingVSIX">Main Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000028.html" LinkGroup="KeepWorkingVSIX">Name Property {DBManager.TimerData}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000045.html" LinkGroup="KeepWorkingVSIX">Name Property {TimerManagement.Timer}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.KeepWorkingVSIXPackage.PackageGuidString" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000002.html" LinkGroup="KeepWorkingVSIX">PackageGuidString Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="UISupplier.Program" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000005F.html" LinkGroup="KeepWorkingVSIX">Program Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="SOLUTION-WIDE PROPERTIES Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000068.html" LinkGroup="KeepWorkingVSIX">SOLUTION-WIDE PROPERTIES Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.SaveAll" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000005C.html" LinkGroup="KeepWorkingVSIX">SaveAll Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.SaveAll" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000040.html" LinkGroup="KeepWorkingVSIX">SaveAll Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.ITimerDataStorage.SaveTimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000024.html" LinkGroup="KeepWorkingVSIX">SaveTimerData Method {DBManager.ITimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.SaveTimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000035.html" LinkGroup="KeepWorkingVSIX">SaveTimerData Method {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.ServiceProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000000C.html" LinkGroup="KeepWorkingVSIX">ServiceProvider Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000004A.html" LinkGroup="KeepWorkingVSIX">Start Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.DBManager.StartNewDay" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000017.html" LinkGroup="KeepWorkingVSIX">StartNewDay Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.DBManager.StartNewWeek" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000018.html" LinkGroup="KeepWorkingVSIX">StartNewWeek Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.StartedDateTimes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000002A.html" LinkGroup="KeepWorkingVSIX">StartedDateTimes Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.Stop" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000004B.html" LinkGroup="KeepWorkingVSIX">Stop Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.StopAndSaveAll" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000005D.html" LinkGroup="KeepWorkingVSIX">StopAndSaveAll Method {BusinessLogic.TimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.ITimerManager.StopAndSaveAll" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000041.html" LinkGroup="KeepWorkingVSIX">StopAndSaveAll Method {TimerManagement.ITimerManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.StoppedDateTimes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000002B.html" LinkGroup="KeepWorkingVSIX">StoppedDateTimes Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.FileHistory.ThisWeekTime" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000001C.html" LinkGroup="KeepWorkingVSIX">ThisWeekTime Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.TimeElapsed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000027.html" LinkGroup="KeepWorkingVSIX">TimeElapsed Property {DBManager.TimerData}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.TimeElapsed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000049.html" LinkGroup="KeepWorkingVSIX">TimeElapsed Property {TimerManagement.Timer}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000042.html" LinkGroup="KeepWorkingVSIX">Timer Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.Timer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000048.html" LinkGroup="KeepWorkingVSIX">Timer Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000025.html" LinkGroup="KeepWorkingVSIX">TimerData Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerData.TimerData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000002C.html" LinkGroup="KeepWorkingVSIX">TimerData Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000002D.html" LinkGroup="KeepWorkingVSIX">TimerDataStorage Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000037.html" LinkGroup="KeepWorkingVSIX">TimerManagement Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000051.html" LinkGroup="KeepWorkingVSIX">TimerManager Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager.TimerManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000054.html" LinkGroup="KeepWorkingVSIX">TimerManager Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.FileHistory.TodayTime" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000001B.html" LinkGroup="KeepWorkingVSIX">TodayTime Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000004.html" LinkGroup="KeepWorkingVSIX">ToolWindow1 Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1.ToolWindow1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000005.html" LinkGroup="KeepWorkingVSIX">ToolWindow1 Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000006.html" LinkGroup="KeepWorkingVSIX">ToolWindow1Command Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.ToolWindow1Command" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000000A.html" LinkGroup="KeepWorkingVSIX">ToolWindow1Command Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Control" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000000F.html" LinkGroup="KeepWorkingVSIX">ToolWindow1Control Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Control.ToolWindow1Control" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000010.html" LinkGroup="KeepWorkingVSIX">ToolWindow1Control Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.FileHistory.TotalTime" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000001D.html" LinkGroup="KeepWorkingVSIX">TotalTime Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="UISupplier" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000005E.html" LinkGroup="KeepWorkingVSIX">UISupplier Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.DBManager.WriteToDB" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000015.html" LinkGroup="KeepWorkingVSIX">WriteToDB Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager._allTimers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000053.html" LinkGroup="KeepWorkingVSIX">_allTimers Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer._data" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000043.html" LinkGroup="KeepWorkingVSIX">_data Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer._isStarted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000044.html" LinkGroup="KeepWorkingVSIX">_isStarted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BusinessLogic.TimerManager._storage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000052.html" LinkGroup="KeepWorkingVSIX">_storage Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Control.button1_Click" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000011.html" LinkGroup="KeepWorkingVSIX">button1_Click Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.getAllStartedTimes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000004D.html" LinkGroup="KeepWorkingVSIX">getAllStartedTimes Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.getAllStoppedTimes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000004E.html" LinkGroup="KeepWorkingVSIX">getAllStoppedTimes Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="TimerManagement.Timer.getReadyToSaveData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000004C.html" LinkGroup="KeepWorkingVSIX">getReadyToSaveData Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingVSIX.ToolWindow1Command.package" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000009.html" LinkGroup="KeepWorkingVSIX">package Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.DBManager.path" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000014.html" LinkGroup="KeepWorkingVSIX">path Field {DBManager.DBManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.path" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000002E.html" LinkGroup="KeepWorkingVSIX">path Field {DBManager.TimerDataStorage}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="DBManager.TimerDataStorage.pathID" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_000000000000002F.html" LinkGroup="KeepWorkingVSIX">pathID Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.timerDataStorage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingVSIX.chm::/topic_0000000000000063.html" LinkGroup="KeepWorkingVSIX">timerDataStorage Field</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+

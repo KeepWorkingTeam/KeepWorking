@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="KeepWorkingTest" Title="KeepWorkingTest Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.AddDeleteTimer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000003.html" LinkGroup="KeepWorkingTest">AddDeleteTimer Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000001.html" LinkGroup="KeepWorkingTest">DbUnitTest1 Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.GetAllNotNullable" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000002.html" LinkGroup="KeepWorkingTest">GetAllNotNullable Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.GetChangeSaveCheck" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000004.html" LinkGroup="KeepWorkingTest">GetChangeSaveCheck Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest.DbUnitTest1.GetNames" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000005.html" LinkGroup="KeepWorkingTest">GetNames Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000000.html" LinkGroup="KeepWorkingTest">KeepWorkingTest Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="KeepWorkingTest Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:KeepWorkingTest.chm::/topic_0000000000000006.html" LinkGroup="KeepWorkingTest">KeepWorkingTest Reference</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+

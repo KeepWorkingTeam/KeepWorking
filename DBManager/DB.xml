@@ -1,4 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <timers>
-  
+  <timer>
+    <Name>TestGetName</Name>
+    <ID>53</ID>
+    <TimeElapsed>00:00:00</TimeElapsed>
+    <CreationDate>14.06.2020 17:10:18</CreationDate>
+    <StartedDateTimes>[]</StartedDateTimes>
+    <StoppedDateTimes>[]</StoppedDateTimes>
+  </timer>
+  <timer>
+    <Name>TestGetName</Name>
+    <ID>54</ID>
+    <TimeElapsed>00:00:00</TimeElapsed>
+    <CreationDate>14.06.2020 17:10:18</CreationDate>
+    <StartedDateTimes>[]</StartedDateTimes>
+    <StoppedDateTimes>[]</StoppedDateTimes>
+  </timer>
+  <timer>
+    <Name>TestGetName</Name>
+    <ID>57</ID>
+    <TimeElapsed>00:00:00</TimeElapsed>
+    <CreationDate>14.06.2020 17:11:49</CreationDate>
+    <StartedDateTimes>[]</StartedDateTimes>
+    <StoppedDateTimes>[]</StoppedDateTimes>
+  </timer>
+  <timer>
+    <Name>TestGetName</Name>
+    <ID>58</ID>
+    <TimeElapsed>00:00:00</TimeElapsed>
+    <CreationDate>14.06.2020 17:11:49</CreationDate>
+    <StartedDateTimes>[]</StartedDateTimes>
+    <StoppedDateTimes>[]</StoppedDateTimes>
+  </timer>
 </timers>
