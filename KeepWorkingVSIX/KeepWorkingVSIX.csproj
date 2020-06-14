@@ -90,6 +90,20 @@
     </VSCTCompile>
     <Content Include="Resources\ToolWindow1Command.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{c9de0982-7f53-4d68-9fb2-f1e3ca7f5f2c}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBManager\DBManager.csproj">
+      <Project>{632d04e0-b11c-47ab-8d9d-6031ecd60416}</Project>
+      <Name>DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UISupplier\UISupplier.csproj">
+      <Project>{acdd8dc9-ed9a-42de-b06d-8d582016934e}</Project>
+      <Name>UISupplier</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
