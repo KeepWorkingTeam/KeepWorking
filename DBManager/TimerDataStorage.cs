@@ -18,10 +18,10 @@ namespace DBManager
         {
             if (!File.Exists(path))
             {
-                File.WriteAllText(path, "");
+                File.WriteAllText(path, "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<timers>\n</timers>");
             }
 
-            XDocument dB = new XDocument();
+            XDocument dB = XDocument.Load(path);
 
             TimerData timerData = new TimerData
             {
@@ -33,7 +33,7 @@ namespace DBManager
                 StoppedDateTimes = new List<DateTime>()
             };
 
-            dB.Element("timers").Add(new XElement("time",
+            dB.Element("timers").Add(new XElement("timer",
                         new XElement("Name", timerData.Name),
                         new XElement("ID", timerData.ID.ToString()),
                         new XElement("TimeElapsed", timerData.TimeElapsed.ToString()),
@@ -62,6 +62,11 @@ namespace DBManager
 
         public List<TimerData> GetAll()
         {
+            if (!File.Exists(path))
+            {
+                return new List<TimerData>();
+            }
+
             XDocument dB = XDocument.Load(path);
 
             var result = from element in dB.Element("timers").Elements("timer")
@@ -80,48 +85,33 @@ namespace DBManager
 
         public List<TimerData> GetByName(string name)
         {
+            if (!File.Exists(path))
+            {
+                return new List<TimerData>();
+            }
+
             XDocument dB = XDocument.Load(path);
 
-            var result = from element in dB.Element("timers").Elements("timer")
-                         where element.Element("Name").Value == name
-                         select new TimerData
-                         {
-                             ID = int.Parse(element.Element("ID").Value),
-                             Name = element.Element("Name").Value,
-                             TimeElapsed = TimeSpan.Parse(element.Element("TimeElapsed").Value),
-                             CreationDate = DateTime.Parse(element.Element("CreationDate").Value),
-                             StartedDateTimes = JsonConvert.DeserializeObject<List<DateTime>>(element.Element("StartedDateTimes").Value),
-                             StoppedDateTimes = JsonConvert.DeserializeObject<List<DateTime>>(element.Element("StoppedDateTimes").Value)
-                         };
+            var result = GetAll().Where(x => x.Name.Equals(name));
 
             return result.ToList<TimerData>() ?? new List<TimerData>();
         }
 
-        public TimerData GetByID(int ID)
+        public TimerData GetByID(int iD)
         {
             XDocument dB = XDocument.Load(path);
 
-            var result = from element in dB.Element("timers").Elements("timer")
-                         where element.Element("ID").Value == ID.ToString()
-                         select new TimerData
-                         {
-                             ID = int.Parse(element.Element("ID").Value),
-                             Name = element.Element("Name").Value,
-                             TimeElapsed = TimeSpan.Parse(element.Element("TimeElapsed").Value),
-                             CreationDate = DateTime.Parse(element.Element("CreationDate").Value),
-                             StartedDateTimes = JsonConvert.DeserializeObject<List<DateTime>>(element.Element("StartedDateTimes").Value),
-                             StoppedDateTimes = JsonConvert.DeserializeObject<List<DateTime>>(element.Element("StoppedDateTimes").Value)
-                         };
+            var result = GetAll().First(x => x.ID == iD);
 
-            return (TimerData)result;
+            return result != null ? (TimerData)result: new TimerData();
         }
 
         public bool SaveTimerData(TimerData timerData)
         {
+            DeleteTimerData(timerData.ID);
             XDocument dB = XDocument.Load(path);
 
-            DeleteTimerData(timerData.ID);
-            dB.Element("timers").Add(new XElement("time",
+            dB.Element("timers").Add(new XElement("timer",
                         new XElement("Name", timerData.Name),
                         new XElement("ID", timerData.ID.ToString()),
                         new XElement("TimeElapsed", timerData.TimeElapsed.ToString()),
@@ -129,7 +119,7 @@ namespace DBManager
                         new XElement("StartedDateTimes", JsonConvert.SerializeObject(timerData.StartedDateTimes)),
                         new XElement("StoppedDateTimes", JsonConvert.SerializeObject(timerData.StoppedDateTimes))));
 
-
+            dB.Save(path);
             return true;
         }
 
