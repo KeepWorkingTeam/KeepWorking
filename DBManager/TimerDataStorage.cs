@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,7 @@ namespace DBManager
                         new XElement("Name", timerData.Name),
                         new XElement("ID", timerData.ID.ToString()),
                         new XElement("TimeElapsed", timerData.TimeElapsed.ToString()),
-                        new XElement("CreationDate", timerData.CreationDate.ToString()),
+                        new XElement("CreationDate", timerData.CreationDate.ToString("dd.MM.yyyy HH:mm:ss")),
                         new XElement("StartedDateTimes", JsonConvert.SerializeObject(timerData.StartedDateTimes)),
                         new XElement("StoppedDateTimes", JsonConvert.SerializeObject(timerData.StoppedDateTimes))));
 
@@ -75,7 +76,7 @@ namespace DBManager
                              ID = int.Parse(element.Element("ID").Value),
                              Name = element.Element("Name").Value,
                              TimeElapsed = TimeSpan.Parse(element.Element("TimeElapsed").Value),
-                             CreationDate = DateTime.Parse(element.Element("CreationDate").Value),
+                             CreationDate = DateTime.ParseExact(element.Element("CreationDate").Value, "dd.MM.yyyy HH:mm:ss", new DateTimeFormatInfo()),
                              StartedDateTimes = JsonConvert.DeserializeObject<List<DateTime>>(element.Element("StartedDateTimes").Value),
                              StoppedDateTimes = JsonConvert.DeserializeObject<List<DateTime>>(element.Element("StoppedDateTimes").Value)
                          };

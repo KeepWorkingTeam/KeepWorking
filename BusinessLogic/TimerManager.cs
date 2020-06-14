@@ -8,7 +8,7 @@ using TimerManagement;
 
 namespace BusinessLogic
 {
-    class TimerManager : ITimerManager
+    public class TimerManager : ITimerManager
     {
         private DBManager.ITimerDataStorage _storage;
         private List<Timer> _allTimers;
