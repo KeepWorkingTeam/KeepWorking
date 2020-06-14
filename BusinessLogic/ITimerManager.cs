@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TimerManagement
 {
-    interface ITimerManager
+    public interface ITimerManager
     {
         Timer CreateTimer(String Name);
         bool DeleteTimer(Timer timer);
