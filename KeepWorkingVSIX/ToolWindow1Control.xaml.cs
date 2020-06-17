@@ -4,6 +4,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Threading;
 using BusinessLogic;
+using Microsoft.VisualStudio.Shell.Interop;
 
 
 namespace KeepWorkingVSIX
@@ -20,31 +21,47 @@ namespace KeepWorkingVSIX
         /// <summary>
         /// Initializes a new instance of the <see cref="ToolWindow1Control"/> class.
         /// </summary>
-        
+        private TimerManager tm;
         public ToolWindow1Control()
         {
             this.InitializeComponent();
 
-            TimerManager tm = new TimerManager();
+            tm = new TimerManager();
             tm.CreateTimer("Timer1");
             tm.CreateTimer("Timer2");
             tm.CreateTimer("Timer3");
 
+            foreach (var t in tm.GetAllTimers())
+            {
+                t.Start();
+            }
+
             TimerList.ItemsSource = tm.GetAllTimers();
-          
+            
+
             var timer = new DispatcherTimer();
-            timer.Tick += new EventHandler(timer_Tick);
+            timer.Tick += new EventHandler(timer_Tick); 
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
+
+            
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
             //DateTime.Now.ToString();
 
+            //MessageBox.Show(tm.GetAllTimers()[0].TimeElapsed.ToString());
+
+            TimerList.ItemsSource = null;
+            TimerList.ItemsSource = tm.GetAllTimers();
+
+
 
             //TimerList.Items.Add(new Button());
         }
+
+        
 
         private void newTimer (object sender, RoutedEventArgs e)
         {

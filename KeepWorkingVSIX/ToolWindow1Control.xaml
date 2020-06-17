@@ -9,9 +9,12 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300"
              Name="MainWindow">
+    <UserControl.Resources>
+        
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*" />
+            <RowDefinition Height="4*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -36,10 +39,12 @@
                                 <TextBlock Name="TimerName" VerticalAlignment="Center"
                                                        Text="{Binding Name}"    
                                                        Foreground="Azure" 
+                                                       Margin="5 0 0 0 "
                                                        />
-                                <TextBlock Name="TimerTimeElapsed"  VerticalAlignment="Center"
+                                <TextBlock x:Name="TimerTimeElapsed"  VerticalAlignment="Center"
                                            Text="{Binding TimeElapsed}"    
                                            Foreground="Azure" 
+                                           Margin="5 0 0 0 "
                                 />
 
                             </StackPanel>
@@ -66,8 +71,8 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="4*" />
-                <RowDefinition Height="3*" />
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="5*" />
             </Grid.RowDefinitions>
 
             <Border Grid.ColumnSpan="2" Margin="5" Background="Black"
