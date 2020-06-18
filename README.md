@@ -8,5 +8,9 @@ If you want to:
 - Use pomodoro right inside VS
 
 Then here's how to install our extension
-
---Work in progress--
+1. Download [Releaze.zip](https://github.com/KeepWorkingTeam/KeepWorking/raw/master/Release.zip)
+2. Extract to any directory
+3. Run KeepWorkingVSIX.vsix
+4. Complite installation using the VSIX Installer
+5. In VS open View->Other Windows->ToolWindow1 **(temporary)**
+6. Keep Working!
