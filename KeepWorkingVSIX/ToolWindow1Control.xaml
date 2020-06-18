@@ -5,18 +5,44 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vsshell="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.15.0"
              Background="#313133"
-             Foreground="{DynamicResource {x:Static vsshell:VsBrushes.WindowTextKey}}"
+             Foreground="Azure"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300"
              Name="MainWindow">
+    <UserControl.Resources>
+
+        <ControlTemplate x:Key="NoScroll">
+            <ItemsPresenter></ItemsPresenter>
+        </ControlTemplate>
+
+        <Style x:Key="MyButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
-        <ScrollViewer Grid.Row="0" Background="#313133">
-            <ListBox Name="TimerList" Margin="5" Background="#232323">
+        <ScrollViewer Grid.Row="0" Background="#313133" CanContentScroll="True">
+            <ListBox Name="TimerList" Margin="5" Background="#232323"
+                     Template="{StaticResource NoScroll}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Border Margin="5" Background="#232323" 
@@ -24,53 +50,52 @@
                             BorderThickness="5" Padding="5"
                             CornerRadius="15"
                             Width="250">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="Resources/play.png" Height="25"
+                            <Button Name="TimerButton" Click="timerButton" Tag="{Binding ID}"
+                                    Background="#232323"
+                                    BorderBrush="#232323"
+                                    Style="{StaticResource MyButton}">
+                                <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight">
+                                    <Image Source="Resources/play.png" Height="25"
                                                    HorizontalAlignment="Left"  
                                                    Width="50"
                                                    />
-                                <TextBlock Name="TimerID" VerticalAlignment="Center"
+                                    <TextBlock Name="TimerID" VerticalAlignment="Center"
                                            Text="{Binding ID}"    
-                                           Foreground="Azure" 
-                                />
-                                <TextBlock Name="TimerName" VerticalAlignment="Center"
+                                           Foreground="Azure"
+                                           />
+                                    <TextBlock Name="TimerName" VerticalAlignment="Center"
                                                        Text="{Binding Name}"    
                                                        Foreground="Azure" 
+                                                       Margin="5 0 0 0 "
                                                        />
-                                <TextBlock Name="TimerTimeElapsed"  VerticalAlignment="Center"
-                                           Text="{Binding TimeElapsed}"    
+                                    <TextBlock x:Name="TimerTimeElapsed"  VerticalAlignment="Center"
+                                           Text="{Binding TimeElapsedCut}"    
                                            Foreground="Azure" 
-                                />
-
-                            </StackPanel>
+                                           Margin="5 0 0 0 "
+                                           />
+                                </StackPanel>
+                            </Button>
                         </Border>
+                        <DataTemplate.Triggers>
+
+                        </DataTemplate.Triggers>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <!--<Border Margin="5" Background="#232323" BorderBrush="DarkSeaGreen" BorderThickness="5" Padding="5"
-                        CornerRadius="15">
-                    <Button BorderBrush="#232323" Background="#232323">
-                        <StackPanel Margin="0 0 0 0" Orientation="Horizontal">
-                            <Image Source="Resources/play.png" Height="25"
-                                   HorizontalAlignment="Left"  Width="200"/>
-                            <TextBlock Name="TimerButton" Margin="10 0 0 0" VerticalAlignment="Center"
-                                       Text="{Binding Path=Date}" Foreground="Azure" />
-                        </StackPanel>
-                    </Button>
-                </Border>-->
 
         </ScrollViewer>
-        <Grid Grid.Row="1" Grid.RowSpan="2" Background="#313133">
+        <Grid Grid.Row="1" Grid.RowSpan="1" Background="#313133">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="4*" />
+                <RowDefinition Height="6*" />
                 <RowDefinition Height="3*" />
+                <RowDefinition Height="5*" />
             </Grid.RowDefinitions>
 
-            <Border Grid.ColumnSpan="2" Margin="5" Background="Black"
+            <Border Grid.Row="0" Grid.ColumnSpan="2" Margin="5" Background="Black"
                     BorderBrush="Black" BorderThickness="5" CornerRadius="10">
                 <TextBlock Padding="5" VerticalAlignment="Center"
                            HorizontalAlignment="Left" Foreground="Azure">
@@ -78,8 +103,24 @@
                 </TextBlock>
             </Border>
 
-            <Border Grid.Row="1" Margin="3" Background="#232323" BorderThickness="5" Padding="5" CornerRadius="15">
-                <Button BorderBrush="#232323" Background="#232323" Click="newTimer">
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0"
+                    Background="#232323" BorderThickness="5" 
+                    Padding="0" CornerRadius="15">
+                <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight">
+                    <TextBlock Text="Enter the name: " Foreground="Azure" Margin="10 0 0 0"/>
+                    <TextBox Name="NameEntering" Foreground="Azure" Background="#232323" 
+                             Height="Auto" 
+                             BorderBrush="#232323" 
+                             MinWidth="100" 
+                             VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+
+            <Border Grid.Column="0" Grid.Row="2" Margin="3" Background="#232323" 
+                    BorderThickness="5" Padding="5" CornerRadius="15">
+                <Button BorderBrush="#232323" Background="#232323" Click="newTimer"
+                        Style="{StaticResource MyButton}">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Foreground="Azure">
                             Create
@@ -88,9 +129,10 @@
                 </Button>
             </Border>
 
-            <Border Grid.Row="1" Grid.Column="1" Margin="3" Background="#232323" 
+            <Border Grid.Row="2" Grid.Column="1" Margin="3" Background="#232323" 
                     BorderThickness="5" Padding="5" CornerRadius="15">
-                <Button BorderBrush="#232323" Background="#232323" Click="deleteTimer">
+                <Button BorderBrush="#232323" Background="#232323" Click="deleteTimer"
+                        Style="{StaticResource MyButton}">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Foreground="Azure">
                             Delete

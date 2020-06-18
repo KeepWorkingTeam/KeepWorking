@@ -1,42 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <timers>
   <timer>
-    <Name>TestGetName</Name>
-    <ID>53</ID>
+    <Name>1</Name>
+    <ID>194</ID>
     <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>14.06.2020 17:10:18</CreationDate>
+    <CreationDate>18.06.2020 17:10:22</CreationDate>
     <StartedDateTimes>[]</StartedDateTimes>
     <StoppedDateTimes>[]</StoppedDateTimes>
   </timer>
   <timer>
-    <Name>TestGetName</Name>
-    <ID>54</ID>
+    <Name>2</Name>
+    <ID>195</ID>
     <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>14.06.2020 17:10:18</CreationDate>
+    <CreationDate>18.06.2020 17:10:24</CreationDate>
     <StartedDateTimes>[]</StartedDateTimes>
     <StoppedDateTimes>[]</StoppedDateTimes>
   </timer>
   <timer>
-    <Name>TestGetName</Name>
-    <ID>57</ID>
+    <Name>3</Name>
+    <ID>196</ID>
     <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>14.06.2020 17:11:49</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>TestGetName</Name>
-    <ID>58</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>14.06.2020 17:11:49</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>63</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>14.06.2020 21:31:10</CreationDate>
+    <CreationDate>18.06.2020 17:10:29</CreationDate>
     <StartedDateTimes>[]</StartedDateTimes>
     <StoppedDateTimes>[]</StoppedDateTimes>
   </timer>
