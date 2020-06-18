@@ -10,6 +10,7 @@
              d:DesignHeight="300" d:DesignWidth="300"
              Name="MainWindow">
     <UserControl.Resources>
+        <Image x:Key="PlayImg" Source="Resources/play.png"/>
 
         <ControlTemplate x:Key="NoScroll">
             <ItemsPresenter></ItemsPresenter>
@@ -45,35 +46,47 @@
                      Template="{StaticResource NoScroll}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border Margin="5" Background="#232323" 
-                            BorderBrush="DarkSeaGreen" 
-                            BorderThickness="5" Padding="5"
-                            CornerRadius="15"
-                            Width="250">
+                        <Border Margin="5" Background="#232323"
+                                BorderBrush="DarkSeaGreen"
+                                BorderThickness="5" Padding="5"
+                                CornerRadius="15"
+                                Width="250">
                             <Button Name="TimerButton" Click="timerButton" Tag="{Binding ID}"
                                     Background="#232323"
                                     BorderBrush="#232323"
                                     Style="{StaticResource MyButton}">
-                                <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight">
-                                    <Image Source="Resources/play.png" Height="25"
-                                                   HorizontalAlignment="Left"  
-                                                   Width="50"
-                                                   />
-                                    <TextBlock Name="TimerID" VerticalAlignment="Center"
-                                           Text="{Binding ID}"    
-                                           Foreground="Azure"
-                                           />
-                                    <TextBlock Name="TimerName" VerticalAlignment="Center"
-                                                       Text="{Binding Name}"    
-                                                       Foreground="Azure" 
-                                                       Margin="5 0 0 0 "
-                                                       />
-                                    <TextBlock x:Name="TimerTimeElapsed"  VerticalAlignment="Center"
-                                           Text="{Binding TimeElapsedCut}"    
-                                           Foreground="Azure" 
-                                           Margin="5 0 0 0 "
-                                           />
-                                </StackPanel>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20"/>
+                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="60"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--<Button Grid.Column="0" Content="{StaticResource PlayImg}"
+Height="Auto"/>-->
+                                    <Image Width="16" Height="16" VerticalAlignment="Center" Margin="-5 0 0 0">
+                                        <Image.Source>
+                                            <BitmapImage DecodePixelWidth="16" UriSource="Resources/pause.png" />
+                                        </Image.Source>
+                                    </Image>
+                                    <!--<TextBlock Name="TimerID" VerticalAlignment="Center"
+Text="{Binding ID}"
+Foreground="Azure"
+/>-->
+                                    <TextBlock Grid.Column="1" Name="TimerName"
+                                               VerticalAlignment="Center"
+                                               Text="{Binding Name}"
+                                               Foreground="Azure"
+                                               Margin="5 0 0 0 "
+                                    />
+                                    <TextBlock x:Name="TimerTimeElapsed"
+                                               Grid.Column="2"
+                                               VerticalAlignment="Center"
+                                               Text="{Binding TimeElapsedCut}"
+                                               Foreground="Azure"
+                                               Margin="5 0 0 0 "
+                                    />
+                                </Grid>
                             </Button>
                         </Border>
                         <DataTemplate.Triggers>
@@ -99,25 +112,26 @@
                     BorderBrush="Black" BorderThickness="5" CornerRadius="10">
                 <TextBlock Padding="5" VerticalAlignment="Center"
                            HorizontalAlignment="Left" Foreground="Azure">
-                    Useful info (no)
+                    No Unread Notifications
                 </TextBlock>
             </Border>
 
             <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0"
-                    Background="#232323" BorderThickness="5" 
+                    Background="#232323" BorderThickness="5"
                     Padding="0" CornerRadius="15">
-                <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight">
+                <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Center">
                     <TextBlock Text="Enter the name: " Foreground="Azure" Margin="10 0 0 0"/>
-                    <TextBox Name="NameEntering" Foreground="Azure" Background="#232323" 
-                             Height="Auto" 
-                             BorderBrush="#232323" 
-                             MinWidth="100" 
+                    <TextBox Name="NameEntering" Foreground="Azure" Background="#232323"
+ 
+                             Height="Auto"
+                             BorderBrush="#232323"
+                             MinWidth="100"
                              VerticalAlignment="Center"/>
                 </StackPanel>
             </Border>
 
 
-            <Border Grid.Column="0" Grid.Row="2" Margin="3" Background="#232323" 
+            <Border Grid.Column="0" Grid.Row="2" Margin="3" Background="#232323"
                     BorderThickness="5" Padding="5" CornerRadius="15">
                 <Button BorderBrush="#232323" Background="#232323" Click="newTimer"
                         Style="{StaticResource MyButton}">
@@ -129,7 +143,7 @@
                 </Button>
             </Border>
 
-            <Border Grid.Row="2" Grid.Column="1" Margin="3" Background="#232323" 
+            <Border Grid.Row="2" Grid.Column="1" Margin="3" Background="#232323"
                     BorderThickness="5" Padding="5" CornerRadius="15">
                 <Button BorderBrush="#232323" Background="#232323" Click="deleteTimer"
                         Style="{StaticResource MyButton}">

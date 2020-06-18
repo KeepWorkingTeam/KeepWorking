@@ -13,13 +13,14 @@ namespace DBManager
 {
     public class TimerDataStorage : ITimerDataStorage
     {
-        public static readonly string SolutionPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName;
-        private string path = SolutionPath + @"\DBManager\DB.xml";
-        private string pathID = SolutionPath + @"\DBManager\TimerID.json";
+        public static readonly string SolutionPath = "C:";
+        private string path = SolutionPath + @"\KeepWorking\DB.xml";
+        private string pathID = SolutionPath + @"\KeepWorking\TimerID.json";
         public TimerData CreateTimerData(string Name, DateTime creationTime)
         {
             if (!File.Exists(path))
             {
+                Directory.CreateDirectory(SolutionPath + "\\KeepWorking");
                 File.WriteAllText(path, "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<timers>\n</timers>");
             }
 
@@ -117,7 +118,7 @@ namespace DBManager
                         new XElement("Name", timerData.Name),
                         new XElement("ID", timerData.ID.ToString()),
                         new XElement("TimeElapsed", timerData.TimeElapsed.ToString()),
-                        new XElement("CreationDate", timerData.CreationDate.ToString()),
+                        new XElement("CreationDate", timerData.CreationDate.ToString("dd.MM.yyyy HH:mm:ss")),
                         new XElement("StartedDateTimes", JsonConvert.SerializeObject(timerData.StartedDateTimes)),
                         new XElement("StoppedDateTimes", JsonConvert.SerializeObject(timerData.StoppedDateTimes))));
 
@@ -129,6 +130,7 @@ namespace DBManager
         {
             if (!File.Exists(pathID))
             {
+                Directory.CreateDirectory(SolutionPath + "\\KeepWorking");
                 File.WriteAllText(pathID, "0");
             }
 
