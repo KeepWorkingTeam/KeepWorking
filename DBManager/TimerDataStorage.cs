@@ -13,8 +13,9 @@ namespace DBManager
 {
     public class TimerDataStorage : ITimerDataStorage
     {
-        private string path = @"..\..\..\DBManager\DB.xml";
-        private string pathID = @"..\..\..\DBManager\TimerID.json";
+        public static readonly string SolutionPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName;
+        private string path = SolutionPath + @"\DBManager\DB.xml";
+        private string pathID = SolutionPath + @"\DBManager\TimerID.json";
         public TimerData CreateTimerData(string Name, DateTime creationTime)
         {
             if (!File.Exists(path))
