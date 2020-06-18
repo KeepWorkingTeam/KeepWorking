@@ -62,17 +62,16 @@
                                         <ColumnDefinition Width="60"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <!--<Button Grid.Column="0" Content="{StaticResource PlayImg}"
-Height="Auto"/>-->
+
+                                    <!--<Button Grid.Column="0" Content="{StaticResource PlayImg}" Height="Auto"/>-->
+
                                     <Image Width="16" Height="16" VerticalAlignment="Center" Margin="-5 0 0 0">
                                         <Image.Source>
                                             <BitmapImage DecodePixelWidth="16" UriSource="Resources/pause.png" />
                                         </Image.Source>
                                     </Image>
-                                    <!--<TextBlock Name="TimerID" VerticalAlignment="Center"
-Text="{Binding ID}"
-Foreground="Azure"
-/>-->
+                                    <!--<TextBlock Name="TimerID" VerticalAlignment="Center" Text="{Binding ID}" Foreground="Azure" />-->
+
                                     <TextBlock Grid.Column="1" Name="TimerName"
                                                VerticalAlignment="Center"
                                                Text="{Binding Name}"
@@ -121,6 +120,7 @@ Foreground="Azure"
                     Padding="0" CornerRadius="15">
                 <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" VerticalAlignment="Center">
                     <TextBlock Text="Enter the name: " Foreground="Azure" Margin="10 0 0 0"/>
+
                     <TextBox Name="NameEntering" Foreground="Azure" Background="#232323"
  
                              Height="Auto"
