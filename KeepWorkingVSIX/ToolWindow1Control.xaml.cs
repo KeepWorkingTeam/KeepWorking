@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading;
 using System.Windows.Data;
@@ -31,21 +32,23 @@ namespace KeepWorkingVSIX
         {
             this.InitializeComponent();
 
+
             tm = new TimerManager();
 
-            foreach (var t in tm.GetAllTimers())
-            {
-                t.Start();
-            }
+            //foreach (var t in tm.GetAllTimers())
+            //{
+            // t.Start();
+            //}
 
+            TimerList.Items.Clear();
             TimerList.ItemsSource = tm.GetAllTimers();
 
+            tm.StopAndSaveAll();
 
             var timer = new DispatcherTimer();
             timer.Tick += new EventHandler(timer_Tick);
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
-
 
         }
 
@@ -57,13 +60,10 @@ namespace KeepWorkingVSIX
 
             TimerList.ItemsSource = null;
             TimerList.ItemsSource = tm.GetAllTimers();
-
-
+            tm.SaveAll();
 
             //TimerList.Items.Add(new Button());
         }
-
-
 
         private void newTimer(object sender, RoutedEventArgs e)
         {
@@ -78,8 +78,17 @@ namespace KeepWorkingVSIX
         private void timerButton(object sender, RoutedEventArgs e)
         {
             var t = tm.GetTimersByID((Int32)((sender as Button).Tag)).First();
-            if (!t.IsStarted) t.Start();
-            else t.Stop();
+            if (!t.IsStarted)
+            {
+                t.Start();
+
+                //(sender as Button).BorderBrush = new SolidColorBrush(Color.FromRgb(143, 188, 143));
+            }
+            else
+            {
+                t.Stop();
+                //(sender as Button).BorderBrush = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+            }
         }
 
         private void deleteTimer(object sender, RoutedEventArgs e)
@@ -100,13 +109,13 @@ namespace KeepWorkingVSIX
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show(
-                string.Format(System.Globalization.CultureInfo.CurrentUICulture, "Invoked '{0}'", this.ToString()),
-                "KeepWorking");
+            string.Format(System.Globalization.CultureInfo.CurrentUICulture, "Invoked '{0}'", this.ToString()),
+            "KeepWorking");
         }
 
         private void UIElement_OnMouseEnter(object sender, MouseEventArgs e)
         {
-            (sender as Button).Background = new SolidColorBrush(Color.FromRgb(35,35,35));
+            (sender as Button).Background = new SolidColorBrush(Color.FromRgb(35, 35, 35));
         }
     }
 }

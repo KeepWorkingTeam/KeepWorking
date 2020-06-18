@@ -88,6 +88,8 @@
     <VSCTCompile Include="KeepWorkingVSIXPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
+    <Resource Include="Resources\pause.png" />
+    <Resource Include="Resources\play.png" />
     <Content Include="Resources\ToolWindow1Command.png" />
   </ItemGroup>
   <ItemGroup>

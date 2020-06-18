@@ -1,91 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <timers>
   <timer>
-    <Name>1</Name>
-    <ID>194</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 17:10:22</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>2</Name>
-    <ID>195</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 17:10:24</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>3</Name>
-    <ID>196</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 17:10:29</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>212</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:11:38</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>213</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:11:38</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>216</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:12:23</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>217</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:12:23</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>219</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:12:33</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>220</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:12:33</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>222</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:13:47</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
-  </timer>
-  <timer>
-    <Name>Timer</Name>
-    <ID>223</ID>
-    <TimeElapsed>00:00:00</TimeElapsed>
-    <CreationDate>18.06.2020 23:13:47</CreationDate>
-    <StartedDateTimes>[]</StartedDateTimes>
-    <StoppedDateTimes>[]</StoppedDateTimes>
+    <Name>Test1</Name>
+    <ID>227</ID>
+    <TimeElapsed>00:00:03.3748386</TimeElapsed>
+    <CreationDate>19.06.2020 01:44:47</CreationDate>
+    <StartedDateTimes>["2020-06-19T01:44:50.087922+03:00"]</StartedDateTimes>
+    <StoppedDateTimes>["2020-06-19T01:44:50.3763438+03:00","2020-06-19T01:44:51.4028102+03:00","2020-06-19T01:44:52.4344144+03:00","2020-06-19T01:44:53.4627606+03:00"]</StoppedDateTimes>
   </timer>
 </timers>
