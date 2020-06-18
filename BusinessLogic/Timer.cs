@@ -68,7 +68,7 @@ namespace TimerManagement
             data.TimeElapsed = _data.TimeElapsed;
             if(IsStarted)
             {
-                data.StartedDateTimes.Add(DateTime.Now);
+                data.StoppedDateTimes.Add(DateTime.Now);
                 DateTime firsTime = data.StartedDateTimes[data.StartedDateTimes.Count - 1];
                 DateTime secondTime = data.StoppedDateTimes[data.StoppedDateTimes.Count - 1];
                 data.TimeElapsed += (secondTime - firsTime);
