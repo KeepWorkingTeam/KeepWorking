@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -35,11 +36,7 @@ namespace TimerManagement
             }
         }
 
-        public String TimeElapsedCut => TimeElapsed.Hours.ToString()
-                                        + " : "
-                                        + TimeElapsed.Minutes
-                                        + " : "
-                                        + TimeElapsed.Seconds;
+        public String TimeElapsedCut => TimeElapsed.ToString(@"hh\:mm\:ss");
         public void Start()
         {
             IsStarted = true;
