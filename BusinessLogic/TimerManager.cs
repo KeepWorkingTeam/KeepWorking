@@ -28,6 +28,7 @@ namespace BusinessLogic
 
         public bool DeleteTimer(Timer timer)
         {
+            if (timer == null) return false;
             _allTimers.Remove(timer);
             return _storage.DeleteTimerData(timer.ID);
         }
@@ -53,6 +54,17 @@ namespace BusinessLogic
             foreach (var timer in GetAllTimers())
             {
                 if(timer.Name.Contains(Name))
+                    result.Add(timer);
+            }
+            return result;
+        }
+
+        public List<Timer> GetTimersByID(Int32 id)
+        {
+            List<Timer> result = new List<Timer>();
+            foreach (var timer in GetAllTimers())
+            {
+                if (timer.ID == id)
                     result.Add(timer);
             }
             return result;

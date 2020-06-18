@@ -13,7 +13,7 @@ namespace TimerManagement
     public class Timer
     {
         private DBManager.TimerData _data;
-        private bool _isStarted;
+        public bool IsStarted { get; private set; }
         public string Name { get => _data.Name; set => _data.Name = value; }
         public DateTime CreationDate => DateCopy(_data.CreationDate);
         public int ID => _data.ID;
@@ -27,22 +27,28 @@ namespace TimerManagement
         {
             get
             {
-                if (!_isStarted)
+                if (!IsStarted)
                     return _data.TimeElapsed;
                 DateTime firstDate = _data.StartedDateTimes[_data.StartedDateTimes.Count - 1];
                 DateTime secondDate = DateTime.Now;
                 return _data.TimeElapsed + (secondDate - firstDate);
             }
         }
+
+        public String TimeElapsedCut => TimeElapsed.Hours.ToString()
+                                        + " : "
+                                        + TimeElapsed.Minutes
+                                        + " : "
+                                        + TimeElapsed.Seconds;
         public void Start()
         {
-            _isStarted = true;
+            IsStarted = true;
             _data.StartedDateTimes.Add(DateTime.Now);
         }                                                            
         public void Stop()                                           
         {
-            _isStarted = false;
-            _data.StartedDateTimes.Add(DateTime.Now);
+            IsStarted = false;
+            _data.StoppedDateTimes.Add(DateTime.Now);
             DateTime firsTime = _data.StartedDateTimes[_data.StartedDateTimes.Count - 1];
             DateTime secondTime = _data.StoppedDateTimes[_data.StoppedDateTimes.Count - 1];
             _data.TimeElapsed += (secondTime - firsTime);
@@ -57,7 +63,7 @@ namespace TimerManagement
             data.StartedDateTimes = _data.StartedDateTimes;
             data.StoppedDateTimes = _data.StoppedDateTimes;
             data.TimeElapsed = _data.TimeElapsed;
-            if(_isStarted)
+            if(IsStarted)
             {
                 data.StartedDateTimes.Add(DateTime.Now);
                 DateTime firsTime = data.StartedDateTimes[data.StartedDateTimes.Count - 1];
