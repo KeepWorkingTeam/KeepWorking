@@ -39,16 +39,22 @@ namespace TimerManagement
         public String TimeElapsedCut => TimeElapsed.ToString(@"hh\:mm\:ss");
         public void Start()
         {
-            IsStarted = true;
-            _data.StartedDateTimes.Add(DateTime.Now);
+            if(!IsStarted)
+            {
+                IsStarted = true;
+                _data.StartedDateTimes.Add(DateTime.Now);
+            }
         }                                                            
         public void Stop()                                           
         {
-            IsStarted = false;
-            _data.StoppedDateTimes.Add(DateTime.Now);
-            DateTime firsTime = _data.StartedDateTimes[_data.StartedDateTimes.Count - 1];
-            DateTime secondTime = _data.StoppedDateTimes[_data.StoppedDateTimes.Count - 1];
-            _data.TimeElapsed += (secondTime - firsTime);
+            if (IsStarted)
+            {
+                IsStarted = false;
+                _data.StoppedDateTimes.Add(DateTime.Now);
+                DateTime firsTime = _data.StartedDateTimes[_data.StartedDateTimes.Count - 1];
+                DateTime secondTime = _data.StoppedDateTimes[_data.StoppedDateTimes.Count - 1];
+                _data.TimeElapsed += (secondTime - firsTime);
+            }
         }
 
         public TimerData getReadyToSaveData()
