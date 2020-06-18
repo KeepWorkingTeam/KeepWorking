@@ -14,3 +14,4 @@ Then here's how to install our extension
 4. Complite installation using the VSIX Installer
 5. In VS open View->Other Windows->ToolWindow1 **(temporary)**
 6. Keep Working!
+[Picture](https://github.com/KeepWorkingTeam/KeepWorking/blob/master/Preview.jpg)
