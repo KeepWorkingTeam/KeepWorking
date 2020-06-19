@@ -1,5 +1,6 @@
 # KeepWorking
 *KeepWorking* is **Visual Studio** extension that makes time tracking easier.
+
 --Early access--
 
 ![Picture](https://github.com/KeepWorkingTeam/KeepWorking/blob/master/Preview.jpg)
