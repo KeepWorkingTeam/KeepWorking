@@ -2,9 +2,6 @@
 *KeepWorking* is **Visual Studio** extension that makes time tracking easier.
 
 --Early access--
-
-![Picture](https://github.com/KeepWorkingTeam/KeepWorking/blob/master/Preview.jpg)
-
 If you want to:
 - Keep in view your tasks
 - Keep tracking of the time you spend on tasks
@@ -18,4 +15,14 @@ Then here's how to install our extension
 4. Complite installation using the VSIX Installer
 5. In VS open View->Other Windows->ToolWindow1 **(temporary)**
 6. Keep Working!
+
+![Picture](https://github.com/KeepWorkingTeam/KeepWorking/blob/master/Preview.jpg)
+
+Features
+- [X] Easy timemanagment
+- [X] Save tasks on closing VS
+- [ ] Statistics and filters
+- [ ] Pomodoro
+
+
 
